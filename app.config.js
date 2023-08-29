@@ -13,13 +13,13 @@ const envSchema = Joi.object({
   APP_MODE: Joi.string()
     .valid('development', 'storybook', 'preview', 'production')
     .required(),
-  // KAKAO_APP_KEY: Joi.string().required(),
+  KAKAO_APP_KEY: Joi.string().required(),
 });
 
 // 환경변수 검증
 const validationResult = envSchema.validate({
   APP_MODE: process.env.APP_MODE,
-  // KAKAO_APP_KEY: process.env.KAKAO_APP_KEY,
+  KAKAO_APP_KEY: process.env.KAKAO_APP_KEY,
 });
 if (validationResult.error) {
   throw validationResult.error;
