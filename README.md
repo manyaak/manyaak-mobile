@@ -1,1 +1,0 @@
-# manyaak-mobile

@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 3.5.2"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "APP_MODE": "development"
+      }
+    },
+    "preview": {
+      "channel": "preview",
+      "distribution": "internal",
+      "env": {
+        "APP_MODE": "preview"
+      }
+    },
+    "production": {
+      "channel": "production",
+      "env": {
+        "APP_MODE": "production"
+      }
+    }
+  },
+  "submit": {
+  }
+}
