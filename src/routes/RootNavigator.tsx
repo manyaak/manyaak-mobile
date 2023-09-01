@@ -38,7 +38,7 @@ const RootNavigator = () => {
         <Stack.Screen
           name={Screen.WebViewScreen}
           component={WebViewScreen}
-          initialParams={{ url: 'https://develop.manyaak-front.pages.dev' }}
+          initialParams={{ url: 'https://manyaak-front.pages.dev' }}
           getId={({ params }) => params.url}
         />
       </Stack.Navigator>
